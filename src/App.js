@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       < DesktopSideBar />
       <div>
-        <p>testing how this looks</p>
+        {/* <p>testing how this looks</p> */}
       </div>
     </div>
   );
