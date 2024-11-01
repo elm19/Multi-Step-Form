@@ -3,10 +3,10 @@ import SideBarText from "./SideBarText";
 
 function DesktopSideBar() {
     const steps = [
-        { number: 1, text: 'First step description' },
-        { number: 2, text: 'Second step description' },
-        { number: 3, text: 'Third step description' },
-        // Add more steps as needed
+        { number: 1, text: 'YOUR INFO' },
+        { number: 2, text: 'SELECT PLAN' },
+        { number: 3, text: 'ADD-ONS' },
+        { number: 4, text: 'SUMMARY' },
     ];
     return (
         <div className="side-bar-desktop">

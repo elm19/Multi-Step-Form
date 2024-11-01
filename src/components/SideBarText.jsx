@@ -1,9 +1,13 @@
 function SideBarText({number, text}) {
     return (
-        <div>
+        <div className="sidebar-text-container">
             <div className="numberText">{number}</div>
-            <div>{`STEP ${number}`}</div>
-            <div>{text}</div>
+            <div className="step-text">
+                {`STEP ${number}`} 
+                <span>
+                    {text}
+                </span>
+            </div>
         </div>
     );
 }

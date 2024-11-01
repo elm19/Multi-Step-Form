@@ -3,18 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'usedFont'; /* The name you want to use for the font */
+    src: url('../assets/fonts/Ubuntu-Regular.ttf') format('truetype'); /* Path to your font file */
+    font-weight: 400; /* You can specify other font weights if needed */
+    font-style: normal; /* You can specify normal, italic, etc. */
+}
 
 body{
+    font-family: 'usedFont', sans-serif;
     background-color: hsl(217, 100%, 97%);
     display: flex;
     justify-content: center;
     align-items: center; 
-    height: 100vh; 
+    height: 100vh;
+    font-size: 16px;
 }
 
 .App{
     width: 940px;
-    display: flex;
+    display: flex;  
     padding: 16px;
     height: 600px;
     align-items: center;
@@ -33,6 +41,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: first baseline;
+    color: white;
+    padding-left: 16px;
+    padding: 24px 0px 0 16px;
+}
+.sidebar-text-container{
+    margin: 16px;
+    display: flex;
+    gap: 10px;
+}
+.step-text{
+    color:  hsl(231, 11%, 63%);
+}
+.sidebar-text-container span{
+    display: block;
+    font-weight: 700;
+    color: white;
 }
 .numberText{
     border: solid 2px white;
