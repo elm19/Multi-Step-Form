@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/step1.css'
 import Button from './Button';
 
-const Step1 = () => {
+const Step1 = ({onSubmit}) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -24,11 +24,12 @@ const Step1 = () => {
         else if (!/^\+?\d{1,15}$/.test(phone)) newErrors.phone = 'Enter a valid number';
 
         setErrors(newErrors);
-        console.log(newErrors);
 
         if (!newErrors.name && !newErrors.email && !newErrors.phone) {
             console.log({ name, email, phone });
             // Here you can handle the form submission
+            console.log("nextstep is ", onSubmit)
+            onSubmit();
         }
     };
 

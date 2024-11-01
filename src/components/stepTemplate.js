@@ -13,7 +13,8 @@ class StepTemplate {
                     <h1>{this.title}</h1>
                     <p>{this.text}</p>
                 </div>
-                {this.component ? this.component() : null} {/* Renders component if it's provided */}
+                
+                {this.component ? this.component : null} 
             </div>
         );
     }
