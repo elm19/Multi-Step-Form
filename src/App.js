@@ -1,20 +1,13 @@
+import './styles/App.css';
+import DesktopSideBar from './components/DesktopSideBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      < DesktopSideBar />
+      <div>
+        <p>testing how this looks</p>
+      </div>
     </div>
   );
 }
