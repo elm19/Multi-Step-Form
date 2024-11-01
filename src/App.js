@@ -1,13 +1,12 @@
 import './styles/App.css';
 import DesktopSideBar from './components/DesktopSideBar';
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
       < DesktopSideBar />
-      <div>
-        {/* <p>testing how this looks</p> */}
-      </div>
+      < Form />
     </div>
   );
 }

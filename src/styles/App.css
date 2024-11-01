@@ -26,6 +26,7 @@ body{
     padding: 16px;
     height: 600px;
     align-items: center;
+    gap: 100px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
 }
@@ -42,7 +43,6 @@ body{
     flex-direction: column;
     align-items: first baseline;
     color: white;
-    padding-left: 16px;
     padding: 24px 0px 0 16px;
 }
 .sidebar-text-container{
@@ -59,7 +59,7 @@ body{
     color: white;
 }
 .numberText{
-    border: solid 2px white;
+    border: solid 2px hsl(229, 24%, 87%);
     border-radius: 50%;
     height: 35px;
     width: 35px;
@@ -69,3 +69,36 @@ body{
     text-align: center; 
     
 }
+
+.form-container{
+    display: flex;
+    width: 450px;
+    height: 500px;
+}
+
+h1{
+    color: hsl(213, 96%, 18%);
+    font-weight: bold;
+}
+p{
+    padding-top: 10px;
+    color: hsl(231, 11%, 63%);
+    margin-bottom: 50px;
+}
+button{
+    width: 125px;
+    height: 50px;
+    align-self: last baseline;
+    color: white;
+    background-color: hsl(213, 96%, 18%);
+    margin-top: 70px;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(213, 93%, 27%); /* Darker shade on hover */
+}
+
+
+
